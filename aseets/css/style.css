@@ -1,0 +1,797 @@
+/* roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+/* raleway font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+
+/* dosis font */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+/* font-family: 'Dosis', sans-serif; */
+
+:root {
+    --main-color: #ff724c;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 75%;
+}
+
+.custom_btn {
+    background-color: var(--main-color);
+    padding: .4rem;
+}
+
+.border_custom {
+    border-color: var(--main-color) !important;
+}
+
+/* any title in page will get this is properties why?*/
+/* لو اشوف الموضغ بلاقي جميعهم ماخذين نفس البعد ونفس المسافات طبعا ال اباوت عندي انا ما اشتغلتها هيك بس الاشي الصح لازم هيك جلوبل للجميع */
+.title span {
+    position: absolute;
+    font-weight: 600;
+    top: -30px;
+    left: -15px;
+    padding-right: 12px;
+    padding-bottom: 4px;
+}
+
+.title span:not(.about span , .contact span) {
+    color: #818181;
+}
+
+h3 {
+    font-size: 20px;
+    color: #3b3b3b;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    color: #818181;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.custom_btn i {
+    transition: .5s;
+}
+
+.nav-link {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1.5px;
+    background-color: var(--main-color);
+    bottom: -10px;
+    left: 0;
+    transition: width .5s;
+}
+
+.nav-item .nav-link:hover::after {
+    width: 100% !important;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+.custom_btn:hover i {
+
+    transform: rotate(360deg);
+    background-color: #3b3b3b !important;
+    color: white;
+}
+
+/* end navbar */
+/* start header */
+.header {
+    background-image: url(../images/introbg5.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center top;
+    background-position-y: 30px;
+    width: 100%;
+}
+
+.header .header-content span {
+    font-family: 'Raleway', sans-serif;
+
+    Font-size: 23px;
+
+    Font-weight: 500;
+
+    Line-height: 27.6px;
+
+    color: rgb(49, 51, 53);
+}
+
+.header .header-content h1 {
+    font-family: 'Dosis', sans-serif;
+
+    Font-size: 60px;
+
+    Font-weight: 700;
+
+    Line-height: 72px;
+
+    color: rgb(33, 37, 41);
+}
+
+.header .header-content p {
+    font-family: 'Raleway', sans-serif;
+    Font-size: 23px;
+
+    Font-weight: 500;
+
+    Line-height: 34.5px;
+    color: rgb(49, 51, 53);
+}
+
+.header .header-content .icons i {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid;
+    margin: 0.4rem;
+    margin-top: 0.7rem;
+}
+
+/*هون انا بدل ما اجيب اعطي لكل ايقونة كلاس خلص بستخدم السودو ايليمنت */
+.header .header-content i:nth-of-type(1) {
+    color: #3b5999;
+    border-color: #3b5999;
+    transition: background-color 0.5s, color .5s, transform 1s;
+}
+
+.header .header-content i:nth-of-type(1):hover {
+    background-color: #3b5999;
+    color: white;
+    transform: rotate(360deg);
+}
+
+.header .header-content i:nth-of-type(2) {
+    color: #ea4c89;
+    border-color: #ea4c89;
+    transition: background-color 0.5s, color .5s, transform 1s;
+}
+
+.header .header-content i:nth-of-type(2):hover {
+    background-color: #ea4c89;
+    color: white;
+    transform: rotate(360deg);
+}
+
+.header .header-content i:nth-of-type(3) {
+    border-color: #1769ff;
+    color: #1769ff;
+    transition: background-color 0.5s, color .5s, transform 1s;
+}
+
+.header .header-content i:nth-of-type(3):hover {
+    background-color: #1769ff;
+    color: white;
+    transform: rotate(360deg);
+}
+
+.header .header-content i:nth-of-type(4) {
+    border-color: #0077b5;
+    color: #0077b5;
+    transition: background-color 0.5s, color .5s, transform 1s;
+}
+
+.header .header-content i:nth-of-type(4):hover {
+    background-color: #0077b5;
+    color: white;
+    transform: rotate(360deg);
+}
+
+.header .header-content i:nth-of-type(5) {
+    border-color: #dd4b39;
+    color: #dd4b39;
+    transition: background-color 0.5s, color .5s, transform 1s;
+}
+
+.header .header-content i:nth-of-type(5):hover {
+    background-color: #dd4b39;
+    color: white;
+    transform: rotate(360deg);
+}
+
+/* end header */
+
+/* start about */
+.about .numbers {
+    background-color: #4e4e4e;
+}
+
+.about .container {
+    width: 63%;
+    margin: auto;
+}
+
+.about .numbers span {
+    font-family: 'Roboto', sans-serif;
+
+    Font-size: 26px;
+
+    Font-weight: 700;
+
+    Line-height: 39px;
+
+    color: rgb(243, 243, 243);
+}
+
+.about .numbers p {
+    font-family: 'Dosis', sans-serif;
+
+    Font-size: 16px;
+
+    Font-weight: 700;
+
+    Line-height: 19.2px;
+
+    color: rgb(243, 243, 243);
+}
+
+.about .description {
+    background-color: #ff7a57;
+}
+
+.padding-for-sen_p {
+    padding-top: 80px !important;
+}
+
+.about .description p {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 2.7rem;
+    box-sizing: border-box;
+    position: relative;
+    Font-size: 15px;
+    Font-weight: 500;
+    Line-height: 18px;
+    color: rgb(243, 243, 243);
+}
+
+.about  .description .ffp::after {
+    content: "";
+    position: absolute;
+    width: 14%;
+    height: .8px;
+    background-color: white;
+    left: 26px;
+    top: 24px;
+}
+
+.about  .description h2 {
+    font-family: 'Dosis', sans-serif;
+    Font-size: 48px;
+    Font-weight: 700;
+    Line-height: 57.6px;
+    color: rgb(243, 243, 243);
+    margin-bottom: -32px;
+}
+
+.about .description .sen_p {
+    font-family: 'Roboto', sans-serif;
+    Font-size: 14px;
+    Font-weight: 400;
+    Line-height: 21px;
+}
+
+.description .custom_anchor {
+    position: relative;
+    display: inline-block;
+    left: 23px;
+    top: 15px;
+    padding: 0 25px 0 0;
+}
+
+.description .custom_icon {
+    padding: 16px;
+    background-color: #3b3b3b;
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    Font-size: 11px;
+    Font-weight: 900;
+    Line-height: 11px;
+    transition: .1s;
+}
+
+.description .custom_icon:hover {
+    color: var(--main-color);
+}
+
+.description .custom_anchor .anch_span {
+    display: inline-block;
+    padding-left: 10px;
+    font-family: 'Raleway', sans-serif;
+    Font-size: 13px;
+    Font-weight: 600;
+    Line-height: 19.5px;
+    color: rgb(59, 59, 59);
+}
+
+/* end about */
+/* start services */
+.global {
+    Font-size: 48px;
+    Font-weight: 700;
+    Line-height: 57.6px;
+    color: rgb(59, 59, 59);
+    font-family: 'Dosis', sans-serif;
+}
+
+.services p {
+    width: 80%;
+    margin: auto;
+}
+
+.services .service-item {
+    position: relative;
+    padding: 35px 0;
+}
+
+.services .service-item ::before {
+    content: ' ';
+    position: absolute;
+    width: 98%;
+    height: 0;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.12);
+    z-index: -1;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.services .service-item :hover::before {
+    height: 100%;
+
+}
+
+/* end services */
+/* start portfolio */
+.portfolio {
+    background-color: #f3f3f3;
+}
+
+.portfolio .nav-link {
+    font-family: 'Raleway', sans-serif;
+    Font-size: 13px;
+    Font-weight: 600;
+    Line-height: 20px;
+    color: rgb(95, 95, 95);
+    border: 1px solid #5f5f5f;
+    padding: 5px;
+}
+
+.portfolio .nav-link.active {
+    color: white;
+    background-color: var(--main-color);
+    border: none;
+    padding: 6.5px;
+}
+
+.portfolio .nav-link:hover {
+    border-color: #5f5f5f;
+}
+
+.portfolio .overlay {
+    background-color: rgba(0, 0, 0, 0.109);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    transform: scaleY(0);
+    transition: 0.5s;
+}
+
+.overlay i {
+    background-color: var(--main-color);
+    color: white;
+    padding: 16px;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.5s, 0.5s;
+
+}
+
+.content-protfolio:hover .overlay {
+    transform: scaleY(1);
+}
+
+.content-protfolio:hover .overlay i {
+    transform: scale(1) rotate(360deg);
+}
+
+.overlay i:hover {
+    color: var(--main-color);
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.portfolio .info-portfolio i {
+    color: var(--main-color);
+    margin-right: 12px;
+    font-size: 18px;
+}
+
+.portfolio .info-portfolio {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 40px;
+    opacity: 0;
+    transition: 0.6s, 0.6s;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.content-protfolio:hover .info-portfolio {
+    opacity: 1;
+    bottom: 0;
+}
+
+.portfolio .row .info-portfolio .desc h3 {
+    font-family: 'Roboto', sans-serif;
+    Font-size: 15px;
+    Font-weight: 500;
+    Line-height: 16px;
+    color: rgb(59, 59, 59);
+}
+
+.portfolio .row .info-portfolio .desc p {
+    font-family: 'Roboto', sans-serif;
+    Font-size: 15px;
+    Font-weight: 400;
+    Line-height: 16px;
+    color: rgb(76, 76, 76);
+}
+
+/* end portfolio */
+
+/* start short bio */
+.short-bio i {
+    width: 42px;
+    border-radius: 50%;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    background-color: var(--main-color);
+    color: white;
+    transform: 0.4s;
+}
+
+.short-bio i:hover {
+    background-color: #f3f3f3;
+    color: var(--main-color);
+}
+
+.short-bio h3 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #3b3b3b;
+    font-family: 'Roboto', sans-serif;
+}
+
+.short-bio .bio-desc {
+    margin-top: 25px;
+}
+
+.short-bio h4 {
+    font-family: 'Roboto', sans-serif;
+    Font-size: 14px;
+    Font-weight: 500;
+    Line-height: 16.8px;
+    color: rgb(59, 59, 59);
+}
+
+.short-bio .bio-desc .item span:not(.persantage):not(.bar) {
+    font-family: 'Roboto', sans-serif;
+    Font-size: 15px;
+    Font-weight: 400;
+    Line-height: 22.5px;
+    color: rgb(255, 114, 76);
+    display: inline-block;
+    margin-bottom: 7px;
+}
+
+.short-bio .bio-desc .item .vv {
+    font-family: 'Roboto', sans-serif;
+    Font-size: 14px;
+    Font-weight: 400;
+    Line-height: 16.8px;
+    color: rgb(59, 59, 59);
+}
+
+.short-bio .bio-desc p {
+    font-family: 'Roboto', sans-serif;
+    Font-size: 15px;
+    Font-weight: 400;
+    Line-height: 23px;
+    color: rgb(59, 59, 59);
+}
+
+.short-bio .head::after,  .short-bio .item:not(:last-of-type):after {
+    content: "";
+    position: absolute;
+    width: 0.80px;
+    height: 100%;
+    background-color: #3b3b3b;
+    top: 28px;
+    z-index: -3;
+    left: 20px;
+}
+
+.short-bio .item::before {
+    content: "";
+    position: absolute;
+    left: -36px;
+    top: -3.34px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px var(--main-color) solid;
+}
+
+.short-bio .item:not(:last-of-type)::after {
+    top: 0px;
+    height: 117%;
+    left: -31px;
+}
+
+.short-bio .item:hover::before {
+    background-color: var(--main-color);
+}
+
+.short-bio p {
+    font-family: 'Roboto', sans-serif;
+    Font-size: 15px;
+    Font-weight: 400;
+    Line-height: 23px;
+    color: rgb(59, 59, 59);
+}
+
+.short-bio .item.firstt::before {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    border: none;
+}
+
+.short-bio .bar {
+    width: 90%;
+    height: 6.78px;
+    background-color: #3b3b3b;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.short-bio .bar::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    background-color: var(--main-color);
+    top: 0;
+    left: 0;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.short-bio .new {
+    width: 73%;
+}
+
+.short-bio .item[persant="80%"] .bar::after {
+    width: 80%;
+}
+
+.short-bio .item[persant="80%"] h4 {
+    width: 73%;
+}
+
+.short-bio .item[persant="80%"] .bar::after {
+    width: 80%;
+}
+
+.short-bio .item[persant="80%"] h4 {
+    width: 73%;
+}
+
+.short-bio .item[persant="70%"] .bar::after {
+    width: 70%;
+}
+
+.short-bio .item[persant="70%"] h4 {
+    width: 63%;
+}
+
+.short-bio .item[persant="55%"] .bar::after {
+    width: 55%;
+}
+
+.short-bio .item[persant="55%"] h4 {
+    width: 49%;
+}
+
+.short-bio .item .new+.persantage {
+    font-family: 'Roboto', sans-serif;
+    Font-size: 14px;
+    Font-weight: 500;
+    Line-height: 16.8px;
+    color: rgb(59, 59, 59);
+}
+
+.short-bio {
+    box-sizing: border-box;
+}
+
+.short-bio .image img {
+    width: 100%;
+}
+
+/* end short bio */
+/* <!-- start resume --> */
+.resume {
+    background-image: linear-gradient(rgba(59, 59, 59, 0.57), rgba(59, 59, 59, 0.57)), url(../images/brandbg.png);
+    background-size: cover;
+
+}
+
+.resume p {
+    color: #f3f3f3;
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.resume a {
+    font-size: 15px;
+    transition: 0.3s;
+
+}
+
+.resume a:hover {
+    background-color: var(--main-color);
+    border: var(--main-color) !important;
+}
+
+/* <!-- end resume --> */
+
+
+/* start TESTIMONIALS*/
+.TESTIMONIALS .qute{
+    text-transform: capitalize;
+    width: 90%;
+    color: #5b5b5b;
+    font-size: 15px;
+    margin: auto;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+.TESTIMONIALS .qute i{
+    color: black;
+    font-size: 23px;
+}
+.TESTIMONIALS h6{
+    color: #313131;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.TESTIMONIALS p{
+    color: #5b5b5b;
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+.TESTIMONIALS .qute:hover{
+    color: #f3f3f3;
+    background: #5b5b5b;
+    border-radius: 10px;
+}
+.carousel-indicators{
+    bottom: -100px !important;
+}
+.carousel-indicators button{
+    border: 1px solid var(--main-color)!important;
+    width: 15px !important;
+    height: 15px !important;
+    padding: 0px !important;
+    border-radius: 50% !important;
+}
+.carousel-indicators .active{
+    background-color: var(--main-color) !important;
+}
+/* end TESTIMONIALS */
+
+/* start contact */
+.contact{
+    background-image: linear-gradient(rgba(255, 114, 76,0.85),rgba(255, 114, 76,0.85)),url(../images/contactbg.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contact ::placeholder{
+    color: white;
+}
+.contact input:focus, .contact textarea:focus{
+    border: 1px solid white !important;
+    box-shadow: none !important;
+}
+/* end conact */
+/* start map */
+.map{
+    height: 80vh;
+}
+.map iframe{
+    height: 100%;
+    margin: 0;
+} 
+.map i{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #f3f3f3;
+    color: var(--main-color);
+    border-radius: 50%;
+    transition: background-color 0.5s,transform 1s;
+}
+.map .container{
+    position: relative;
+}
+.map .comm{
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+    background: #282828;
+    color: #f3f3f3;
+    border-radius: 10px 10px 0 0;
+    top: -99px;
+}
+
+.map .container .comm i:hover{
+    transform: rotate(360deg);
+    background-color: var(--main-color);
+    color: white;
+}
+
+/* end map */
+
+/* start footer */
+.footer{
+    background-color: #f3f3f3;
+}
+.footer .main{
+    color: var(--main-color);
+}
+/* end footer */
+input, textarea{
+    color: white !important;
+}
