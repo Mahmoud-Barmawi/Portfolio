@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer components {
+  .shared-nav-link {
+    @apply p-3 hover:bg-stone-200 hover:backdrop-blur-md hover:rounded-xl hover:text-stone-900;
+  }
+}
+
+@layer utilities {
+  @media (min-width: 640px) and (max-width: 845px) {
+    .between-custom {
+      @apply px-4;
+    }
+  }
+
+  .animate-scroll {
+    animation: scroll 15s linear  infinite;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@theme {
+  --font-display: Marck Script, cursive;
+}
