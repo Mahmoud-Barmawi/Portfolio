@@ -20,7 +20,7 @@ export const Hero = () => {
             projects and following modern development practices.
           </p>
 
-          <div className="mt-5">
+          {/* <div className="mt-5">
             <a
               href="https://drive.google.com/file/d/1bhVyPJZxvA8c66zfEcafpaZCMVk4myL1/view?usp=sharing"
               target="_blank"
@@ -58,7 +58,7 @@ export const Hero = () => {
               </svg>
               See My Resume
             </a>
-          </div>
+          </div> */}
         </div>
 
         <div className="w-[250px] flex justify-center   items-center flex-col ">
