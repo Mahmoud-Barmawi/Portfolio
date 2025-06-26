@@ -1,4 +1,4 @@
-import profilePic from "../assets/profile.png"
+import profilePic from "../assets/profile.png";
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 export const Hero = () => {
@@ -20,9 +20,9 @@ export const Hero = () => {
             projects and following modern development practices.
           </p>
 
-          {/* <div className="mt-5">
+          <div className="mt-5">
             <a
-              href="https://drive.google.com/file/d/1bhVyPJZxvA8c66zfEcafpaZCMVk4myL1/view?usp=sharing"
+              href="https://drive.google.com/file/d/1ziec6TXa0yLRBkUaYn8z5FIEU7JrDjAj/view?usp=sharing"
               target="_blank"
               rel="noopener"
               className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm sm:text-base font-medium
@@ -58,7 +58,7 @@ export const Hero = () => {
               </svg>
               See My Resume
             </a>
-          </div> */}
+          </div>
         </div>
 
         <div className="w-[250px] flex justify-center   items-center flex-col ">
