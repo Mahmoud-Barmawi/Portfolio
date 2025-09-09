@@ -42,7 +42,7 @@ export const projects = [
       "Matter.js",
       "Supabase",
     ],
-    githubUrl: "https://github.com/Mahmoud-Barmawi/White-Simulation",
+    githubUrl: "https://github.com/Mahmoud-Barmawi/White_Simulation",
      liveDemoUrl: ""
   },
   {
