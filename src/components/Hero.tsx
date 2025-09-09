@@ -13,7 +13,7 @@ export const Hero = () => {
           <p className="font-medium mt-4 text-zinc-700 dark:text-zinc-300 w-full  ">
             Creative and detail-oriented{" "}
             <span className="cursor-pointer font-semibold font-mono bg-white/35  shadow-[0_8px_32px_#1f268726] backdrop-blur-[15px] rounded-sm px-2 py-1">
-              Frontend Developer
+              Frontend Engineer
             </span>{" "}
             with hands-on experience in building responsive and user-friendly
             web applications. Eager to learn and grow by working on real-world
