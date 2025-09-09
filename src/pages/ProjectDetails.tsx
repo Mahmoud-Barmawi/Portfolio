@@ -81,7 +81,7 @@ export const ProjectDetails = () => {
           </div>
         </div>
 
-        <div className="mt-8">
+        <div className="mt-8 flex gap-2">
           <a
             href={project.githubUrl}
             target="_blank"
@@ -89,6 +89,15 @@ export const ProjectDetails = () => {
             className="inline-flex items-center gap-2 px-4 py-2 bg-zinc-900 text-white dark:bg-zinc-100 dark:text-black rounded-lg hover:opacity-90 transition"
           >
             View on GitHub <ExternalLink size={18} />
+          </a>
+
+          <a
+            href={project.liveDemoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-zinc-900 text-white dark:bg-zinc-100 dark:text-black rounded-lg hover:opacity-90 transition"
+          >
+            Live Demo <ExternalLink size={18} />
           </a>
         </div>
       </motion.div>
