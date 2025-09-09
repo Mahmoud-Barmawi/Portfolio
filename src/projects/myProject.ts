@@ -24,7 +24,7 @@ export const projects = [
       "Stream API"
     ],
     githubUrl: "https://github.com/Mahmoud-Barmawi/Streamify",
-    liveDemoUrl: "" 
+    liveDemoUrl: "https://streamify-p04e.onrender.com/" 
   },
   {
     id: "white-simulation",
@@ -43,7 +43,7 @@ export const projects = [
       "Supabase",
     ],
     githubUrl: "https://github.com/Mahmoud-Barmawi/White_Simulation",
-     liveDemoUrl: ""
+     liveDemoUrl: "https://drive.google.com/file/d/18qfl-8PuUUVdIV2vL9l-WVJHs8zEFIkH/view"
   },
   {
     id: "trekstay",
@@ -53,7 +53,7 @@ export const projects = [
     thumbnailUrl: TekStay_TN,
     technologies: ["Express.js", "MongoDB", "JWT", "Bcrypt", "Cloudinary"],
     githubUrl: "https://github.com/Mahmoud-Barmawi/TrekStay",
-    liveDemoUrl: ""
+    liveDemoUrl: "https://documenter.getpostman.com/view/27540287/2s9Ykn81p6"
   },
   {
     id: "getyourguide",
@@ -63,7 +63,7 @@ export const projects = [
     thumbnailUrl: GETYOURGUIED_TN,
     technologies: ["React.js", "RapidAPI", "Axios", "Formik", "Bootstrap"],
     githubUrl: "https://github.com/Mahmoud-Barmawi/GetYourGuide",
-     liveDemoUrl: ""
+     liveDemoUrl: "https://drive.google.com/file/d/1uNSdrgwJSC8hVp3A5LoeFRB7FRSrbQpr/view"
   },
   {
     id: "heybrain",
@@ -73,7 +73,7 @@ export const projects = [
     thumbnailUrl: HEYBRAIN_TN,
     technologies: ["HTML", "CSS", "Bootstrap", "JavaScript"],
     githubUrl: "https://github.com/Mahmoud-Barmawi/HeyBrain",
-     liveDemoUrl: ""
+     liveDemoUrl: "https://mahmoud-barmawi.github.io/HeyBrain/"
   },
   {
     id: "full-crud",
@@ -83,7 +83,7 @@ export const projects = [
     thumbnailUrl: CRUD_TN,
     technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "SweetAlerts"],
     githubUrl: "https://github.com/Mahmoud-Barmawi/CRUD",
-     liveDemoUrl: ""
+     liveDemoUrl: "https://mahmoud-barmawi.github.io/CRUD/"
   },
   {
     id: "weather-app",
@@ -93,7 +93,7 @@ export const projects = [
     thumbnailUrl: WheatherWeb_TN,
     technologies: ["HTML", "CSS", "JavaScript", "API Integration"],
     githubUrl: "https://github.com/Mahmoud-Barmawi/Weather-app",
-     liveDemoUrl: ""
+     liveDemoUrl: "https://mahmoud-barmawi.github.io/Weather-app/"
   },
   {
     id: "to-do-list",
