@@ -1,5 +1,4 @@
 import { motion } from "motion/react";
-
 import {
   SiHtml5,
   SiCss3,
@@ -10,7 +9,6 @@ import {
   SiNextdotjs,
   SiRedux,
   SiBootstrap,
-  SiSass,
   SiGit,
   SiGithub,
   SiNodedotjs,
@@ -18,10 +16,11 @@ import {
   SiPostman,
   SiMongodb,
   SiMysql,
+  SiNpm,
+  SiPostgresql,
 } from "react-icons/si";
 
 const skills = [
-  // Frontend
   {
     name: "HTML",
     icon: <SiHtml5 />,
@@ -33,31 +32,6 @@ const skills = [
     icon: <SiCss3 />,
     textColor: "text-blue-600",
     bgColor: "bg-blue-100 dark:bg-blue-800/20",
-  },
-  {
-    name: "SASS",
-    icon: <SiSass />,
-    textColor: "text-pink-600",
-    bgColor: "bg-pink-100 dark:bg-pink-800/20",
-  },
-  {
-    name: "LESS",
-    icon: <span className="text-lg font-bold">LESS</span>,
-    textColor: "text-blue-500",
-    bgColor: "bg-blue-100 dark:bg-blue-800/20",
-  },
-
-  {
-    name: "Tailwind CSS",
-    icon: <SiTailwindcss />,
-    textColor: "text-indigo-400",
-    bgColor: "bg-teal-100 dark:bg-teal-800/20",
-  },
-  {
-    name: "Bootstrap",
-    icon: <SiBootstrap />,
-    textColor: "text-purple-700",
-    bgColor: "bg-purple-100 dark:bg-purple-800/20",
   },
   {
     name: "JavaScript",
@@ -72,7 +46,20 @@ const skills = [
     bgColor: "bg-blue-100 dark:bg-blue-800/20",
   },
   {
-    name: "React",
+    name: "Java",
+    icon: <span className="text-lg font-bold">Java</span>,
+    textColor: "text-red-600",
+    bgColor: "bg-red-100 dark:bg-red-800/20",
+  },
+  {
+    name: "C++",
+    icon: <span className="text-lg font-bold">C++</span>,
+    textColor: "text-blue-700",
+    bgColor: "bg-blue-100 dark:bg-blue-800/20",
+  },
+
+  {
+    name: "React.js",
     icon: <SiReact />,
     textColor: "text-cyan-400",
     bgColor: "bg-cyan-100 dark:bg-cyan-800/20",
@@ -89,8 +76,24 @@ const skills = [
     textColor: "text-purple-600",
     bgColor: "bg-purple-100 dark:bg-purple-800/20",
   },
-
-  // Backend
+  {
+    name: "TanStack Query",
+    icon: <span className="text-lg font-bold">TQ</span>,
+    textColor: "text-indigo-600",
+    bgColor: "bg-indigo-100 dark:bg-indigo-800/20",
+  },
+  {
+    name: "Tailwind CSS",
+    icon: <SiTailwindcss />,
+    textColor: "text-indigo-400",
+    bgColor: "bg-teal-100 dark:bg-teal-800/20",
+  },
+  {
+    name: "Bootstrap",
+    icon: <SiBootstrap />,
+    textColor: "text-purple-700",
+    bgColor: "bg-purple-100 dark:bg-purple-800/20",
+  },
   {
     name: "Node.js",
     icon: <SiNodedotjs />,
@@ -104,12 +107,18 @@ const skills = [
     bgColor: "bg-zinc-200 dark:bg-zinc-800/50",
   },
   {
-    name: "REST APIs",
-    icon: <SiPostman />,
+    name: "RESTful APIs",
+    icon: <span className="text-lg font-bold">API</span>,
     textColor: "text-orange-500",
     bgColor: "bg-orange-100 dark:bg-orange-800/20",
   },
-  // Databases
+  {
+    name: "JWT Authentication",
+    icon: <span className="text-lg font-bold">JWT</span>,
+    textColor: "text-yellow-600",
+    bgColor: "bg-yellow-100 dark:bg-yellow-800/20",
+  },
+
   {
     name: "MongoDB",
     icon: <SiMongodb />,
@@ -122,8 +131,13 @@ const skills = [
     textColor: "text-blue-600",
     bgColor: "bg-blue-100 dark:bg-blue-800/20",
   },
+  {
+    name: "PostgreSQL",
+    icon: <SiPostgresql />,
+    textColor: "text-blue-700",
+    bgColor: "bg-blue-100 dark:bg-blue-800/20",
+  },
 
-  // Tools & Testing
   {
     name: "Git",
     icon: <SiGit />,
@@ -135,6 +149,73 @@ const skills = [
     icon: <SiGithub />,
     textColor: "text-zinc-800 dark:text-zinc-200",
     bgColor: "bg-zinc-200 dark:bg-zinc-800/50",
+  },
+  {
+    name: "npm",
+    icon: <SiNpm />,
+    textColor: "text-red-600",
+    bgColor: "bg-red-100 dark:bg-red-800/20",
+  },
+  {
+    name: "VS Code",
+    icon: <span className="text-lg font-bold">VS Code</span>,
+    textColor: "text-blue-600",
+    bgColor: "bg-blue-100 dark:bg-blue-800/20",
+  },
+  {
+    name: "Postman",
+    icon: <SiPostman />,
+    textColor: "text-orange-500",
+    bgColor: "bg-orange-100 dark:bg-orange-800/20",
+  },
+
+  {
+    name: "OOP",
+    icon: <span className="text-lg font-bold">OOP</span>,
+    textColor: "text-purple-600",
+    bgColor: "bg-purple-100 dark:bg-purple-800/20",
+  },
+  {
+    name: "SOLID",
+    icon: <span className="text-lg font-bold">SOLID</span>,
+    textColor: "text-indigo-600",
+    bgColor: "bg-indigo-100 dark:bg-indigo-800/20",
+  },
+  {
+    name: "Team Collaboration",
+    icon: <span className="text-lg font-bold">🤝</span>,
+    textColor: "text-green-600",
+    bgColor: "bg-green-100 dark:bg-green-800/20",
+  },
+  {
+    name: "Communication",
+    icon: <span className="text-lg font-bold">💬</span>,
+    textColor: "text-blue-600",
+    bgColor: "bg-blue-100 dark:bg-blue-800/20",
+  },
+  {
+    name: "Problem Solving",
+    icon: <span className="text-lg font-bold">🧩</span>,
+    textColor: "text-yellow-600",
+    bgColor: "bg-yellow-100 dark:bg-yellow-800/20",
+  },
+  {
+    name: "Time Management",
+    icon: <span className="text-lg font-bold">⏱️</span>,
+    textColor: "text-purple-600",
+    bgColor: "bg-purple-100 dark:bg-purple-800/20",
+  },
+  {
+    name: "Continuous Learning",
+    icon: <span className="text-lg font-bold">📚</span>,
+    textColor: "text-indigo-600",
+    bgColor: "bg-indigo-100 dark:bg-indigo-800/20",
+  },
+  {
+    name: "Growth Mindset",
+    icon: <span className="text-lg font-bold">🌱</span>,
+    textColor: "text-green-500",
+    bgColor: "bg-green-100 dark:bg-green-800/20",
   },
 ];
 
@@ -148,9 +229,14 @@ export const Skills = () => {
         {skills.map((skill, index) => (
           <motion.div
             key={index}
-            initial={{ opacity: 0.02, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.2, delay: index * 0.02 }}
+            initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
+            whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+            transition={{
+              duration: 0.4,
+              delay: index * 0.005,
+              type: "spring",
+              stiffness: 120,
+            }}
             viewport={{ once: true }}
             className={`flex flex-col items-center justify-center gap-2 p-4 rounded-xl shadow-md dark:shadow-zinc-800  ${skill.bgColor}`}
           >

@@ -15,12 +15,10 @@ export const Navbar = () => {
   }, [location.pathname]);
 
   return (
-    <nav className="w-full flex items-center justify-between sm:h-20 h-14 sm:border-0 border-b border-zinc-400">
-      <div className=" xl:px-0 px-5 flex items-center justify-between w-full max-w-[1024px] mx-auto select-none ">
+    <nav className="w-full flex items-center justify-between sm:h-20 h-14 sm:border-0 border-b border-zinc-400 ">
+      <div className=" xl:px-0 px-5 flex items-center justify-between w-full max-w-[1024px] mx-auto select-none  ">
         <div className="">
           <Link to="/">
-       
-
             <svg
               className="w-8 h-8 text-black dark:text-white"
               viewBox="0 0 100 100"
@@ -52,9 +50,9 @@ export const Navbar = () => {
         </div>
 
         {showNavbar && (
-          <div className="text-stone-900 dark:text-stone-50 ">
-            <ul className="flex flex-row justify-center gap-4 font-medium max-sm:hidden">
-              {["About", "Projects", "Skills"].map((item, index) => (
+          <div className="dark:text-[hsl(258,10%,80%)] text-[hsl(258,10%,20%)]">
+            <ul className="flex flex-row justify-center gap-4 font-semibold max-sm:hidden">
+              {["Experience", "Education","Projects", "Skills"].map((item, index) => (
                 <li key={index}>
                   <a
                     href={`#${item.toLocaleLowerCase()}`}
@@ -67,6 +65,7 @@ export const Navbar = () => {
             </ul>
           </div>
         )}
+
         <div className="text-center flex items-center justify-center gap-4 ">
           <a
             href="mailto:mahmoudbarmawi926@gmail.com"
@@ -88,10 +87,8 @@ export const Navbar = () => {
             className="cursor-pointer"
           >
             {theme === "dark" ? (
-              // <Sun className="w-10 sm:w-[25px] text-zinc-50" />
               <Sun className="sm:w-[25px]  text-zinc-50" />
             ) : (
-              // <Moon className="w-10 sm:w-[25px] text-zinc-950 " />
               <Moon className="sm:w-[25px] text-zinc-950" />
             )}
           </button>

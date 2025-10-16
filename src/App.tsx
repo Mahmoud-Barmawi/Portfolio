@@ -57,7 +57,7 @@ const App = () => {
         </script>
       </Helmet>
 
-      <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 max-sm:min-w-full flex flex-col  antialiased">
+      <div className="min-h-screen bg-zinc-50 dark:bg-midnight  max-sm:min-w-full flex flex-col  antialiased">
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />

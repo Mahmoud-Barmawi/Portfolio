@@ -6,61 +6,8 @@ export const Hero = () => {
   if (!themeContext) return <div>Error: ThemeContext not available</div>;
   const { theme } = themeContext;
   return (
-    <div className="bg-zinc-200 dark:bg-transparent py-8 w-full pt-20">
-      <div className="mx-auto w-full max-w-[800px]  flex flex-col-reverse justify-center max-sm:items-center sm:flex-row gap-10 py-10  between-custom">
-        <div className="sm:w-[500px] w-full max-sm:text-wrap text-zinc-900   dark:text-zinc-100 max-sm:text-center between-custom">
-          <h1 className="font-extrabold text-4xl">Hi, I'm Mahmoud Barmawi</h1>
-          <p className="font-medium mt-4 text-zinc-700 dark:text-zinc-300 w-full  ">
-            Creative and detail-oriented{" "}
-            <span className="cursor-pointer font-semibold font-mono bg-white/35  shadow-[0_8px_32px_#1f268726] backdrop-blur-[15px] rounded-sm px-2 py-1">
-              Frontend Engineer
-            </span>{" "}
-            with hands-on experience in building responsive and user-friendly
-            web applications. Eager to learn and grow by working on real-world
-            projects and following modern development practices.
-          </p>
-
-          <div className="mt-5">
-            <a
-              href="https://drive.google.com/file/d/1ziec6TXa0yLRBkUaYn8z5FIEU7JrDjAj/view?usp=sharing"
-              target="_blank"
-              rel="noopener"
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm sm:text-base font-medium
-                   text-orange-500
-                   bg-black/90
-                   hover:bg-black
-
-                   dark:bg-orange-500
-                  dark:text-zinc-950
-                   dark:hover:bg-orange-600
-                   transition-colors
-                  shadow-sm
-                  font-sans
-                  text-center
-                   "
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={24}
-                height={24}
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={2}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-file-user-icon lucide-file-user"
-              >
-                <path d="M14 2v4a2 2 0 0 0 2 2h4" />
-                <path d="M15 18a3 3 0 1 0-6 0" />
-                <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z" />
-                <circle cx={12} cy={13} r={2} />
-              </svg>
-              See My Resume
-            </a>
-          </div>
-        </div>
-
+    <div className="bg-zinc-200 dark:bg-transparent lg:py-24 py-10 pb-20 sm:pb-40 w-full">
+      <div className="mx-auto w-full max-w-[800px]  flex flex-col justify-center max-sm:items-center sm:flex-row gap-10 py-10  between-custom">
         <div className="w-[250px] flex justify-center   items-center flex-col ">
           <div className="w-[200px]">
             <img
@@ -209,6 +156,59 @@ export const Hero = () => {
                   <path d="M329,145h-432c-22.1,0-40,17.9-40,40v432c0,22.1,17.9,40,40,40h432c22.1,0,40-17.9,40-40V185C369,162.9,351.1,145,329,145z M41.4,508.1H-8.5V348.4h49.9V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7 c18.4,0,29.7,11.9,30.1,27.7C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4 c-14.9,0-23.2,10-27,19.6c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6 c35.5,0,63.3,23,63.3,72.4V508.1z" />{" "}
                 </g>
               </svg>
+            </a>
+          </div>
+        </div>
+
+        <div className="sm:w-[500px] max-sm:w-[360px] max-sm:text-wrap text-zinc-900   dark:text-zinc-100 max-sm:text-center between-custom">
+          <h1 className="font-extrabold text-4xl">Hi, I'm Mahmoud Barmawi</h1>
+          <p className="font-medium mt-4 text-zinc-700 dark:text-zinc-300 w-full  ">
+            Creative and detail-oriented{" "}
+            <span className=" text-orange-600  transition-colors duration-200 font-bold">
+              Frontend Web Developer
+            </span>{" "}
+            with hands-on experience in building responsive and user-friendly
+            web applications. Eager to learn and grow by working on real-world
+            projects and following modern development practices.
+          </p>
+
+          <div className="mt-5">
+            <a
+              href="https://drive.google.com/file/d/1ziec6TXa0yLRBkUaYn8z5FIEU7JrDjAj/view?usp=sharing"
+              target="_blank"
+              rel="noopener"
+              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm sm:text-base font-medium
+                   text-orange-500
+                   bg-black/90
+                   hover:bg-black
+
+                   dark:bg-orange-500
+                  dark:text-zinc-950
+                   dark:hover:bg-orange-600
+                   transition-colors
+                  shadow-sm
+                  font-sans
+                  text-center
+                   "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width={24}
+                height={24}
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-file-user-icon lucide-file-user"
+              >
+                <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+                <path d="M15 18a3 3 0 1 0-6 0" />
+                <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z" />
+                <circle cx={12} cy={13} r={2} />
+              </svg>
+              See My Resume
             </a>
           </div>
         </div>

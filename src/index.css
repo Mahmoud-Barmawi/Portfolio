@@ -4,17 +4,18 @@
 
 @layer components {
   .shared-nav-link {
-    @apply p-3 hover:bg-stone-200 hover:backdrop-blur-md hover:rounded-xl hover:text-stone-900;
+    @apply p-2 hover:bg-stone-200 hover:backdrop-blur-md hover:rounded-xl hover:text-stone-900;
   }
 }
-
+@theme {
+  --color-midnight: #04020b
+}
 @layer utilities {
   @media (min-width: 640px) and (max-width: 845px) {
     .between-custom {
       @apply px-4;
     }
   }
-
   .animate-scroll {
     animation: scroll 15s linear  infinite;
   }
