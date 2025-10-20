@@ -52,7 +52,7 @@ export const Navbar = () => {
         {showNavbar && (
           <div className="dark:text-[hsl(258,10%,80%)] text-[hsl(258,10%,20%)]">
             <ul className="flex flex-row justify-center gap-4 font-semibold max-sm:hidden">
-              {["Experience", "Education","Projects", "Skills"].map((item, index) => (
+              {[ "Education","Projects", "Skills"].map((item, index) => (
                 <li key={index}>
                   <a
                     href={`#${item.toLocaleLowerCase()}`}

@@ -16,15 +16,26 @@ export const Education = () => {
             className="relative rounded-xl p-6 mb-6 backdrop-blur-lg bg-zinc-200 dark:bg-zinc-800/30 border border-zinc-500/50 text-lg text-zinc-900 dark:text-zinc-50 leading-relaxed tracking-wide shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer"
           >
             <div className="flex flex-wrap items-center mb-2  text-xl">
-              <h3 className="font-semibold">{exp.major} at&nbsp;</h3>
-              <a
-                href="https://www.najah.edu/en/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-orange-600 font-semibold underline"
-              >
-                {exp.universityName}
-              </a>
+              <h3 className="font-semibold">
+                {exp.major} at{" "}
+                <a
+                  href="https://www.najah.edu/en/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-orange-600 font-semibold underline hover:text-orange-700"
+                >
+                  {exp.universityName}
+                </a>
+                <span className="mx-2 text-zinc-400">|</span>
+                <a
+                  href="https://drive.google.com/file/d/1wn8nuK_Rr6ugE5ARAbHPRVB7mKBBFdqv/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-orange-600 font-medium underline hover:text-orange-700"
+                >
+                  View Certificate
+                </a>
+              </h3>
             </div>
 
             <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4">

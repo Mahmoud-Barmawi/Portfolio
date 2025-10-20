@@ -21,7 +21,7 @@ export const Experience = () => {
                 href="https://orienteed.com/en/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-orange-600 font-semibold underline"
+                className="text-orange-600 font-medium underline hover:text-orange-700"
               >
                 {exp.companyName}
               </a>
