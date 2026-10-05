@@ -18,7 +18,7 @@ export const Experience = () => {
             <div className="flex flex-wrap items-center mb-2  text-xl">
               <h3 className="font-semibold">{exp.jobTitle} at&nbsp;</h3>
               <a
-                href="https://orienteed.com/en/"
+                href={exp.companyWebsite}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-orange-600 font-medium underline hover:text-orange-700"

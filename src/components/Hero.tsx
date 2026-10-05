@@ -163,13 +163,14 @@ export const Hero = () => {
         <div className="sm:w-[500px] max-sm:w-[360px] max-sm:text-wrap text-zinc-900   dark:text-zinc-100 max-sm:text-center between-custom">
           <h1 className="font-extrabold text-4xl">Hi, I'm Mahmoud Barmawi</h1>
           <p className="font-medium mt-4 text-zinc-700 dark:text-zinc-300 w-full  ">
-            Creative and detail-oriented{" "}
-            <span className=" text-orange-600  transition-colors duration-200 font-bold">
-              Frontend Web Developer
-            </span>{" "}
-            with hands-on experience in building responsive and user-friendly
-            web applications. Eager to learn and grow by working on real-world
-            projects and following modern development practices.
+            I'm a full-stack software engineer who
+            enjoys building reliable systems and clean, intuitive interfaces. I
+            work across backend and frontend, building RESTful APIs and
+            full-stack applications with features such as secure authentication,
+            validation, booking, media handling, email, third-party
+            integrations, and real-time communication. I care about modular
+            architecture, clean code, and continuously learning to build and
+            ship better software.
           </p>
 
           <div className="mt-5">
